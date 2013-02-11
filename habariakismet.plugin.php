@@ -1,5 +1,7 @@
 <?php
 
+	namespace Habari;
+
 require_once 'vendor/Akismet.class.php';
 
 class HabariAkismet extends Plugin
