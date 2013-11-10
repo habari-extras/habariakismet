@@ -51,7 +51,7 @@ class HabariAkismet extends Plugin
     {
         $endpoint = ($form->provider->value == 'Akismet') ? self::SERVER_AKISMET : self::SERVER_TYPEPAD;
 
-        $a = new Akismet(Site::get_url('habari'), $key);
+        $a = new \Akismet(Site::get_url('habari'), $key);
         $a->setAkismetServer($endpoint);
 
         if (!$a->isKeyValid()) {
